@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Mukta:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+#moviecontainer{
+    width: 90%;
+    /* border: 2px solid black; */
+    
+    margin: 0px auto;
+margin-top: 30px;
+/* background-color: rgb(101, 119, 134); */
+display: flex;
+flex-wrap: wrap;
+
+
+
+}
+
+.moviethumb{
+    font-family: "Raleway", sans-serif;
+font-weight: 400;
+    border: 2px outset black;
+    border-radius:  10px;
+    width: calc(25% - 4px - 30px - 30px);
+    background-color: gray;
+    /* opacity: 1; */
+    padding: 10px;
+    
+    text-align: center;
+    margin: 15px;
+margin: 15px auto;
+
+    transition-property: transform;
+    transition-duration: 500ms;
+
+
+    background-image: url(https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;
+
+  background-size: cover; 
+  /* box-shadow: 3px 3px 20px gray , -3px -3px 20px gray; */
+
+/* animation-name: bordereff;
+animation-duration: 800ms;
+animation-iteration-count: 1; */
+
+    
+}
+
+.moviethumb:hover{
+    transform:scale(0.9) ;
+    animation-name: bordereff;
+animation-duration: 1500ms;
+animation-iteration-count: 1;
+}
+
+
+
+
+@keyframes bordereff{
+
+    0%{
+    
+        box-shadow:0px 0px 0px gray , 0px 0px 0px gray;
+    }
+    
+    /* 20%{
+        text-shadow: 1px 1px 8px gray;
+    
+    }
+    
+    40%{
+        text-shadow: 2px 2px 8px red;
+    
+    }
+    
+    
+    60%{
+        text-shadow: 3px 3px 8px gray;
+    
+    }
+    80%{
+        text-shadow: 4px 4px 8px red;
+    
+    } */
+    
+    100%{
+        box-shadow: 10px 10px 20px gray , -10px -10px 20px gray;    
+    }
+    
+        
+    }
+
+
+
+    #formin{
+
+        margin-bottom: 100px;
+
+
+    }
+
+.image{
+height: 250px;
+    width: 100%;
+   
+}
+
+/* .image:hover{
+    transform:scale(0.9) ;
+} */
+
+body{
+    font-family: "Mukta", sans-serif;
+    
+background-image: url(https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=600) ;
+/* filter: blur(10px); */
+background-attachment: fixed;
+  background-position:  center;
+  background-size: cover; 
+  margin: 0px;
+
+
+}
+
+#movieinput{
+    width: 300px;
+    height: 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#movieinput:hover{
+    transform:scale(0.95);
+    opacity: 0.7;
+
+  
+}
+
+#search-button{
+transition-property: transform;
+transition-duration: 400ms;
+height: 30px;
+font-size: 15px;
+
+border-radius: 5px;
+
+}
+
+
+#search-button:hover{
+
+    background-color: rgb(152, 3, 3);
+
+    /* transform: scale(1.1); */
+    transform: scaleX(0.9);
+    
+
+}
+
+
+#heading2{
+    /* text-shadow: 3px 5px 8px red; */
+    margin-top: 40px;
+    animation-duration: 700ms;
+    animation-name: blinkeff;
+    animation-iteration-count: infinite;
+    
+
+}
+
+#heading2:hover{
+
+     /* text-shadow: 3px 5px 8px red; */
+
+}
+
+
+.spinner-border{
+
+    
+}
+
+
+@keyframes blinkeff{
+
+0%{
+
+    text-shadow: 1px 1px 8px red;
+}
+
+20%{
+    text-shadow: 1px 1px 8px gray;
+
+}
+
+40%{
+    text-shadow: 2px 2px 8px red;
+
+}
+
+
+60%{
+    text-shadow: 3px 3px 8px gray;
+
+}
+80%{
+    text-shadow: 4px 4px 8px red;
+
+}
+
+100%{
+    text-shadow: 5px 5px 8px gray;
+
+}
+
+    
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    .moviethumb{
+    width: calc(100% - 30px - 30px);
+    }
+
+
+    
+}
+
+@media (min-width:601px) {
+    .moviethumb{
+    width: calc(50% - 30px - 30px);
+    }
+
+
+    
+}
+@media (min-width:901px) {
+    .moviethumb{
+    width: calc(33.33% - 30px - 30px);
+    }
+
+
+    
+}
+@media (min-width:1201px) {
+    .moviethumb{
+    width: calc(25% - 30px - 30px);
+    }
+
+
+    
+}
